@@ -49,7 +49,7 @@ class _OptionsDescriptionState extends State<OptionsDrescription> {
             } else if (index == 1) {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MyApp()),
+                MaterialPageRoute(builder: (context) => MyHomePage()),
               );
             } else if (index == 2) {
               Navigator.push(
