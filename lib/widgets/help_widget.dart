@@ -39,7 +39,7 @@ class HelpWidgetState extends State<HelpWidget> {
                 ),
                 Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   FlatButton(
-                    color: Color(0xFF012E6E),
+                    color: Color(0xFFEF6C01),
                     onPressed: () {},
                     child: Text(
                       'TELEFONAR',
@@ -50,7 +50,7 @@ class HelpWidgetState extends State<HelpWidget> {
                   ),
                   SizedBox(width: 10.0),
                   FlatButton(
-                    color: Color(0xFF012E6E),
+                    color: Color(0xFFEF6C01),
                     onPressed: () {},
                     child: Text(
                       'WHATS APP',
