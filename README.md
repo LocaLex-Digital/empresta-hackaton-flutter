@@ -1,4 +1,4 @@
-# empresta_app
+# EmprestaLex
 
 A new Flutter project.
 
