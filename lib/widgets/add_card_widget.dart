@@ -9,7 +9,7 @@ class AddCardWidget extends StatefulWidget {
 
 class _AddCardWidgetState extends State<AddCardWidget> {
   TextEditingController _controller;
-  double _currentSliderValue = 100;
+  int _currentSliderValue = 50;
 
   void initState() {
     super.initState();
@@ -52,7 +52,7 @@ class _AddCardWidgetState extends State<AddCardWidget> {
                 children: [
                   const SizedBox(height: 20.0),
                   Text(
-                    'R\$ ' ' $_currentSliderValue',
+                    'R\$ ' '$_currentSliderValue',
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 16,
@@ -60,14 +60,16 @@ class _AddCardWidgetState extends State<AddCardWidget> {
                     ),
                   ),
                   Slider(
-                    value: _currentSliderValue,
-                    min: 100,
-                    max: 9999,
-                    divisions: 1000,
+                    value: _currentSliderValue.toDouble(),
+                    activeColor: Color(0xFFEF6C01),
+                    inactiveColor: Color(0xFF012E6E),
+                    min: 50,
+                    max: 3000,
+                    divisions: 100,
                     label: _currentSliderValue.round().toString(),
                     onChanged: (double value) {
                       setState(() {
-                        _currentSliderValue = value;
+                        _currentSliderValue = value.round();
                       });
                     },
                   ),
